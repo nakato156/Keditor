@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+
+:root {
+  --color-letras: whitesmoke;
+  --color--hover-tenue: rgba(255, 255, 255, 0.096);
+  --color-separador: teal;
+  --bg-edior: #1E2122;
+  --font-size-editor: 13px;
+}
+
+.divListGroupExplorador {
+  height: 100vh;
+  max-width: 99%;
+  max-height: 99%;
+  background-color: transparent;
+  color: var(--color-letras);
+  overflow: hidden;
+  transition: overflow 0.3s ease-in-out;
+}
+.divListGroupExplorador:hover {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.divListGroupExplorador:hover::-webkit-scrollbar {
+  visibility: visible;
+}
+.divListGroupExplorador::-webkit-scrollbar {
+  width: 12px;
+}
+.divListGroupExplorador::-webkit-scrollbar-thumb {
+  background-color: rgba(101, 101, 102, 0.479);
+}
+
+.estiloItemExplorador {
+  border-bottom: 1px solid var(--color-separador) !important;
+  color: var(--color-letras) !important;
+  background: transparent !important;
+  padding: .5rem !important;
+}
+.estiloItemExplorador:hover {
+  background-color: var(--color--hover-tenue) !important;
+}
+
+.fontExplorador {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: var(--font-size-editor);
+}
+
+.iconoCerrarArchivo {
+  margin: 0 -2px 0 5px;
+  translate: 0 -5px;
+  display: flex;
+  width: 35%;
+  border-radius: 50%;
+}
+.iconoCerrarArchivo:hover {
+  background: #9aa0a154;
+}
+
+.contextMenu {
+  position: absolute;
+  z-index: 2;
+  background-color: transparent;
+  list-style: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.listaContextMenu {
+  padding-left: 0;
+  background-color: var(--bg-edior);
+  border: 1px solid var(--color-letras);
+}
+.listaContextMenu > li {
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-letras);
+  height: 1rem;
+  border-bottom: 1px solid var(--color-separador);
+}
+.listaContextMenu > li:hover {
+  background: var(--color--hover-tenue);
+}
+
+.itemNav {
+  padding: 0 2px;
+  max-width: 200px;
+  color: whitesmoke;
+  display: inline-flex;
+  align-items: center;
+}
+.itemNav > div {
+  max-width: 100%;
+}
+.file-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.estiloArchivo {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.estiloArchivo span {
+  margin-left: 5px;
+}
+.estiloFolder {
+  padding-left: 20px;
+}
+.estiloFolder .folder--label {
+  display: flex;
+  align-items: center;
+}
+.estiloFolder span {
+  margin-left: 5px;
+}
